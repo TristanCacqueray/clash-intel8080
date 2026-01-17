@@ -2,7 +2,7 @@ module Hardware.Intel8080.ALU (binALU, shiftRotateALU) where
 
 import Prelude ()
 import Data.Word
-import Clash.Prelude
+import Clash.Prelude hiding (And)
 import Hardware.Intel8080
 
 nybbles :: Value -> (Unsigned 4, Unsigned 4)

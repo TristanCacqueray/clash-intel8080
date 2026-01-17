@@ -17,6 +17,7 @@ import Control.Monad.State
 import Control.Arrow ((&&&))
 import Control.Monad.Trans.Maybe
 import Control.Monad.Except
+import Control.Monad (unless, when)
 import Text.Printf
 
 data FlowControl

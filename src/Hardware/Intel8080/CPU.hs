@@ -19,6 +19,7 @@ import Control.Monad.State
 import Control.Monad.Trans.Maybe
 import Control.Monad.Except
 import Control.Lens hiding (Index)
+import Control.Monad (void, guard, when, unless)
 import Data.Maybe (fromMaybe, isJust)
 import Data.Wedge
 

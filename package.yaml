@@ -27,7 +27,7 @@ dependencies:
   - bytestring
   - mtl
   - transformers
-  - barbies ^>= 2.0.1
+  - barbies >= 2.0.1
   - barbies-th
   - containers
   - array
@@ -71,6 +71,7 @@ ghc-options:
   -fplugin GHC.TypeLits.KnownNat.Solver
   -fplugin GHC.TypeLits.Normalise
   -fplugin GHC.TypeLits.Extra.Solver
+  -freduction-depth=1024
 
 source-dirs:
   - src

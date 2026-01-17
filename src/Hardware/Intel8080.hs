@@ -1,7 +1,7 @@
 {-# LANGUAGE PatternSynonyms #-}
 module Hardware.Intel8080 where
 
-import Clash.Prelude
+import Clash.Prelude hiding (And)
 import Clash.Annotations.BitRepresentation hiding (Value)
 
 type Reg = Index 8

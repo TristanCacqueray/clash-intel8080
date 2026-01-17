@@ -106,6 +106,8 @@ pop2 =
 popPC :: MicroSteps True False
 popPC = pop2 >++> step INothing Jump INothing
 
+instance NFDataX (Wedge OutAddr InAddr)
+
 type MicroOp = (MicroInstr, Wedge OutAddr InAddr)
 type Setup = Maybe InAddr
 type MicroOps = [MicroOp]

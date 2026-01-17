@@ -18,7 +18,7 @@ import Data.Char (chr)
 import Test.Tasty (defaultMain, TestTree, testGroup)
 import Test.Tasty.Golden (goldenVsString, findByExtension)
 import System.FilePath ((<.>))
-import Data.ByteString.Lazy.Builder
+import Data.ByteString.Builder
 import Data.ByteString.Lazy (ByteString)
 
 run :: Bool -> IOArray Addr Value -> IO ByteString
